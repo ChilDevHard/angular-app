@@ -1,0 +1,66 @@
+.activity-container {
+    width: 320px;
+    height: 380px; 
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+  
+.activity-container h2 {
+    margin: 0;
+    font-size: 20px;
+}
+  
+.activity-details {
+    flex: 1;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.activity-details p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #1976d2;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+  }
+  
+button:hover {
+    background-color: #125a9e;
+}
+
+.api-source {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--gray-700);
+}
+  
+.api-source a {
+    color: var(--bright-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+  
+.api-source a:hover {
+    color: var(--electric-violet);
+}
+  
+  
