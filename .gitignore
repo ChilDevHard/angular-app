@@ -32,3 +32,4 @@ Thumbs.db
 # Optional cache files
 /.cache
 .angular/cache
+.vercel

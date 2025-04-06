@@ -1,0 +1,38 @@
+<div class="activity-container">
+    <h2 *ngIf="activity && !loading">Random activity</h2>
+  
+    <div class="activity-details">
+      <ng-container *ngIf="loading">
+        <p>Loading...</p>
+      </ng-container>
+  
+      <ng-container *ngIf="!loading && !activity && !error">
+        <p>Click the button below to see the magic!</p>
+      </ng-container>
+  
+      <div *ngIf="error" class="error">{{ error }}</div>
+  
+      <div *ngIf="activity && !loading">
+        <p><strong>Activity:</strong> {{ activity.activity }}</p>
+        <p><strong>Type:</strong> {{ activity.type }}</p>
+        <p><strong>Participants:</strong> {{ activity.participants }}</p>
+        <p><strong>Price:</strong> {{ activity.price }}</p>
+        <p><strong>Availability:</strong> {{ activity.availability }}</p>
+        <p><strong>Accessibility:</strong> {{ activity.accessibility }}</p>
+        <p><strong>Duration:</strong> {{ activity.duration }}</p>
+        <p><strong>Kid Friendly:</strong> {{ activity.kidFriendly ? 'Yes' : 'No' }}</p>
+        <p *ngIf="activity.link">
+          <strong>Link:</strong>
+          <a [href]="activity.link" target="_blank">{{ activity.link }}</a>
+        </p>
+      </div>
+    </div>
+  
+    <button (click)="loadActivity()" [disabled]="loading">Refresh Activity</button>
+  
+    <div class="api-source">
+      Source:
+      <a href="https://bored-api.appbrewery.com" target="_blank">Bored API</a>
+    </div>
+  </div>
+  

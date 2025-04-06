@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://bored-api.appbrewery.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": { "^/api": "" }
+    }
+}
