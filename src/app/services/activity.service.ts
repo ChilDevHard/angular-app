@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { isDevMode } from '@angular/core';
 
 export interface Activity {
   activity: string;
@@ -20,7 +21,9 @@ export interface Activity {
   providedIn: 'root'
 })
 export class ActivityService {
-  private apiUrl = '/api/random';
+  private apiUrl = isDevMode()
+  ? '/api/random'
+  : 'https://bored-api.appbrewery.com/random';
 
   constructor(private http: HttpClient) {}
 
