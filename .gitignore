@@ -1,0 +1,34 @@
+# Angular build files
+/dist
+/.angular
+/.output
+
+# Node dependencies
+/node_modules
+
+# Build artifacts
+/tmp
+/out-tsc
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & OS stuff
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.js.map
+
+# Environment files (if any)
+.env
+.env.local
+.env.*.local
+
+# Optional cache files
+/.cache
+.angular/cache
