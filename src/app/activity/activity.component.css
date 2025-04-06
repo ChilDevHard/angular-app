@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #ffffff;
+    overflow: hidden;
 }
   
 .activity-container h2 {
