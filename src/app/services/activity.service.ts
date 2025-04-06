@@ -22,8 +22,8 @@ export interface Activity {
 })
 export class ActivityService {
   private apiUrl = isDevMode()
-  ? '/api/random'
-  : 'https://bored-api.appbrewery.com/random';
+  ? '/api/random'     //  use proxy in local dev
+  : '/api/activity';  //  use Vercel function in production
 
   constructor(private http: HttpClient) {}
 
